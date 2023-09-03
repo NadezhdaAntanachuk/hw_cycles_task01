@@ -12,7 +12,6 @@ public class RestMonthsNumberTest {
             "2, 100,60,150"
     })
     public void testRestMonthsNumber(int expected, int income, int expenses, int threshold) {
-    //    int expected = 3;
         int actual;
         RestMonthsNumber service = new RestMonthsNumber();
         actual = service.calcNumber(income, expenses, threshold);
